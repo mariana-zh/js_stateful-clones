@@ -23,7 +23,7 @@ function transformStateWithClones(state, actions) {
           delete current[key];
         }
         break;
-      case 'clean':
+      case 'clear':
         current = {};
         break;
 
