@@ -23,10 +23,12 @@ function transformStateWithClones(state, actions) {
           delete current[key];
         }
         break;
-
-      default:
+      case 'clean':
         current = {};
         break;
+
+      default:
+        return 'Unknown action type';
     }
 
     result.push(current);
